@@ -1,0 +1,41 @@
+# Deployment of Vagrant Ubuntu Cluster with LAMP Stack
+
+#!/bin/bash
+
+# Step 1: Navigating to the target directory
+cd Documents
+
+# Step 2: Creating a directory to hold scripts
+mkdir vms
+
+# Step 3: Copying necessary scripts to the vms directory using a file manager
+
+# Step 4: Making the scripts executable
+chmod +x command.sh
+chmod +x vagrant.sh
+
+# Step 5: Running Vagrant to set up the environment
+./vagrant.sh
+
+# Step 6: Checking important files on the master
+vagrant ssh master
+sudo su - altschool
+ls -al
+exit
+
+# Step 7: Logging in to the slave
+vagrant ssh slave_1
+cat ~/.ssh/authorized_keys
+cat ~/.ssh/authorized_keys
+ls -al
+exit
+
+# Step 8: Verifying LAMP stack installation
+vagrant ssh master
+systemctl status apache2
+apache2 --version
+php --version
+systemctl status mysql
+
+
+
