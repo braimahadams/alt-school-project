@@ -1,0 +1,29 @@
+1. Assignment Operator (=): Used to assign a value to a variable. Example: x=10.
+
+2. Arithmetic Operators (+, -, *, /, %): Used for mathematical calculations. Example: result=$((x + y)).
+
+3. Comparison Operators (==, !=, <, >, <=, >=): Used to compare values. Example: if [ $x -eq $y ].
+
+4. String Concatenation (.): Combines strings. Example: fullname="$firstname $lastname".
+
+5. Logical Operators (&&, ||, !): Used to perform logical operations. Example: if [ $x -gt 0 ] && [ $y -lt 10 ].
+
+6. Increment (++) and Decrement (--) Operators: Used to increase or decrease a variable's value. Example: count=$((count + 1)).
+
+7. Concatenation (+=) Operator: Adds content to the end of a string. Example: message+=" World".
+
+8. String Comparison (=): Checks if two strings are equal. Example: if [ "$string1" = "$string2" ].
+
+9. Pattern Matching (*, ?): Used to match strings using wildcards. Example: if [[ $filename == *.txt ]].
+
+10. Command Substitution ($() or `): Executes a command and replaces it with the command's output. Example: result=$(ls).
+
+11. Array Operators ([], [@], [*]): Used to work with arrays in Bash. Example: array=("item1" "item2").
+
+12 .File Test Operators (-f, -d, -e): Checks the existence and type of files and directories. Example: if [ -e "$file" ].
+
+13 .Bitwise Operators (&, |, ^, <<, >>): Used for bitwise operations on integers. Example: result=$((x & y)).
+
+14. Null Coalescing Operator (??): Provides a default value if a variable is null or unset. Example: result="${variable??default}".
+
+15. Ternary Operator (? :): Provides a concise way to perform conditional assignments. Example: result=$((x > y ? x : y))
